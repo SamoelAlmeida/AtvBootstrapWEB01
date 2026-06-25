@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitada Caseira | Receitas Com Afeto</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #fffaf5; 
+            color: #2c2520;
+            padding-top: 76px;
+        }
+        
+        .navbar-custom {
+            background-color: #1a1512;
+            border-bottom: 1px solid #2c2520;
+        }
+
+        .hero-banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200&auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            color: white;
+            border-radius: 12px;
+        }
+
+        .card-receita {
+            border: 1px solid #f0e6df;
+            background-color: #ffffff;
+            border-radius: 12px;
+        }
+        .card-receita img {
+            border-radius: 11px 11px 0 0;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .btn-terracota {
+            background-color: #c85a32;
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+        }
+        .btn-terracota:hover {
+            background-color: #a64420;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white fs-3" href="#">
+                <i class="bi bi-mortar-pestle me-2 text-success"></i>pitada<span class="text-warning">caseira</span>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navConteudo">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navConteudo">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link active fw-semibold" href="#">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Prato Principal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobremesas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Bebidas</a></li>
+                </ul>
+                
+                <form class="d-flex position-relative" role="search">
+                    <input class="form-control rounded bg-dark text-white border-secondary pe-5" type="search" placeholder="O que vamos cozinhar?">
+                    <button class="btn text-secondary position-absolute end-0 top-50 translate-middle-y border-0" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <header class="hero-banner p-5 mb-5">
+            <div class="col-lg-7">
+                <span class="badge bg-warning text-dark mb-3 px-3 py-2 rounded-pill fw-bold text-uppercase">Técnica Básica</span>
+                <h1 class="display-5 fw-bold lh-tight">A Arte de Selar Carnes: Reação de Maillard Descomplicada</h1>
+                <p class="lead my-3">Entenda a ciência por trás daquela crosta dourada e saborosa. Saiba por que mudar a temperatura da frigideira altera completamente a suculência e o aroma do seu bife.</p>
+                <a class="btn btn-terracota mt-2" href="#">Ler o Artigo</a>
+            </div>
+        </header>
+
+        <div class="row g-4">
+            
+            <main class="col-lg-8">
+                <h4 class="fw-bold mb-4 d-flex align-items-center gap-2">
+                    <i class="bi bi-journal-text text-success"></i> Receitas Recentes
+                </h4>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card card-receita h-100">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&auto=format&fit=crop&q=60" alt="Pizza">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h5 class="fw-bold">Pizza Margherita com Fermentação Natural</h5>
+                                <p class="text-muted small flex-grow-1">Como usar o levain para obter uma massa leve, alvéolos perfeitos e aquela borda tostada típica das pizzarias napolitanas artesanais.</p>
+                                <a href="#" class="text-terracota text-decoration-none fw-bold mt-3 small">Ver receita <i class="bi bi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-receita h-100">
+                            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&auto=format&fit=crop&q=60" alt="Bolo">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h5 class="fw-bold">Bolo Chiffon de Baunilha e Limão-Siciliano</h5>
+                                <p class="text-muted small flex-grow-1">O passo a passo para aerar as claras corretamente e garantir uma estrutura incrivelmente fofa que derrete na boca.</p>
+                                <a href="#" class="text-terracota text-decoration-none fw-bold mt-3 small">Ver receita <i class="bi bi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-receita h-100">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&auto=format&fit=crop&q=60" alt="Salada">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h5 class="fw-bold">Emulsões Estáveis: Vinagrete de Mostarda Dijon</h5>
+                                <p class="text-muted small flex-grow-1">A proporção exata de óleo e ácido para criar um molho espesso que adere perfeitamente às folhas sem separar os ingredientes.</p>
+                                <a href="#" class="text-terracota text-decoration-none fw-bold mt-3 small">Ver receita <i class="bi bi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-receita h-100">
+                            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&auto=format&fit=crop&q=60" alt="Massa">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h5 class="fw-bold">Fettuccine Al Ragu de Costela Bovina</h5>
+                                <p class="text-muted small flex-grow-1">O segredo do cozimento lento em fogo brando para extrair o colágeno da carne e encorpar o molho de tomate pelado.</p>
+                                <a href="#" class="text-terracota text-decoration-none fw-bold mt-3 small">Ver receita <i class="bi bi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-receita h-100">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&auto=format&fit=crop&q=60" alt="Hambúrguer">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h5 class="fw-bold">Técnica Smash: Hambúrguer na Chapa de Ferro</h5>
+                                <p class="text-muted small flex-grow-1">Como prensar a carne contra a superfície quente para maximizar a caramelização sem secar o interior do blend.</p>
+                                <a href="#" class="text-terracota text-decoration-none fw-bold mt-3 small">Ver receita <i class="bi bi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card card-receita h-100">
+                            <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=400&auto=format&fit=crop&q=60" alt="Pequeno-almoço">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h5 class="fw-bold">Panquecas Americanas com Buttermilk Caseiro</h5>
+                                <p class="text-muted small flex-grow-1">Use a reação do bicarbonato com leite talhado para criar panquecas altas, aeradas e extremamente macias.</p>
+                                <a href="#" class="text-terracota text-decoration-none fw-bold mt-3 small">Ver receita <i class="bi bi-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <aside class="col-lg-4">
+                <div class="p-4 mb-4 rounded-3 border bg-white">
+                    <h6 class="fw-bold text-dark mb-2">Gostas do nosso cantinho?</h6>
+                    <p class="text-muted small mb-3">Inscreva-se para receberes um e-mail simpático com as receitas do fim de semana.</p>
+                    <button type="button" class="btn btn-terracota w-100 fw-semibold" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+                        Quero me inscrever
+                    </button>
+                </div>
+
+                <div class="p-3 mb-4 bg-white border rounded-3">
+                    <h5 class="fw-bold mb-3 fs-6 text-uppercase tracking-wider text-muted">As Mais Procuradas</h5>
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-2 small">
+                            <span class="text-warning fw-bold me-2">1.</span> Como neutralizar a acidez do tomate com cenoura ralada
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-2 small">
+                            <span class="text-warning fw-bold me-2">2.</span> A proporção correta de água para arroz agulha solto
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action border-0 px-0 py-2 small">
+                            <span class="text-warning fw-bold me-2">3.</span> Como substituir o creme de leite em molhos salgados
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 p-3" style="border-radius: 12px;">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Vem para a nossa cozinha!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label small fw-medium">Como se chama?</label>
+                            <input type="text" class="form-control" id="nome" placeholder="seu nome ou apelido" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label small fw-medium">Seu e-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+                        </div>
+                        <div class="d-flex gap-2 justify-content-end mt-4">
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Fechar</button>
+                            <input type="submit" class="btn btn-terracota" value="Inscrever-se">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white-50 mt-5 py-5">
+        <div class="container">
+            <div class="row align-items-center g-3 text-center text-md-start">
+                <div class="col-md-4">
+                    <span class="fw-bold text-white fs-4">pitada<span class="text-warning">caseira</span></span>
+                </div>
+                <div class="col-md-4 text-center">
+                    <small>&copy; 2026 Pitada Caseira. Projeto de Web Design.</small>
+                </div>
+                <div class="col-md-4 text-md-end d-flex justify-content-center justify-content-md-end gap-3">
+                    <a href="#" class="text-white-50"><i class="bi bi-instagram fs-5"></i></a>
+                    <a href="#" class="text-white-50"><i class="bi bi-pinterest fs-5"></i></a>
+                    <a href="#" class="text-white-50"><i class="bi bi-youtube fs-5"></i></a>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-4 small">
+                <a href="#" class="text-white-50 text-decoration-none">Sobre Nós</a>
+                <a href="#" class="text-white-50 text-decoration-none">Contacto</a>
+                <a href="#" class="text-white-50 text-decoration-none">Políticas de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
